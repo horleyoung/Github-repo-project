@@ -2,7 +2,7 @@
 
 Search a GitHub username and see their public repositories. Built with React, Vite and Tailwind CSS for the DevConnect internship task on data fetching with **loading, error and empty states**.
 
-**Live demo:** https://YOUR-APP.vercel.app
+**Live demo:** https://github-repo-project-eight.vercel.app/
 
 ## Run locally
 
@@ -17,10 +17,10 @@ Every state can be reached from the URL alone, with no code changes. A `?state=`
 
 | State | Live link | Local path | What you should see |
 |---|---|---|---|
-| Loading | [/?state=loading](https://YOUR-APP.vercel.app/?state=loading) | `/?state=loading` | Six grey skeleton cards that stay on screen (the request never finishes on purpose) |
-| Error | [/?state=error](https://YOUR-APP.vercel.app/?state=error) | `/?state=error` | "Server error. Please try again later." with a **Try again** button |
-| Empty | [/?state=empty](https://YOUR-APP.vercel.app/?state=empty) | `/?state=empty` | "No repositories yet" message |
-| Success | [/](https://YOUR-APP.vercel.app/) | `/` | The repositories for `gaearon`, plus a total-stars line |
+| Loading | [/?state=loading](https://github-repo-project-eight.vercel.app/?state=loading) | `/?state=loading` | Six grey skeleton cards that stay on screen (the request never finishes on purpose) |
+| Error | [/?state=error](https://github-repo-project-eight.vercel.app/?state=error) | `/?state=error` | "Server error. Please try again later." with a **Try again** button |
+| Empty | [/?state=empty](https://github-repo-project-eight.vercel.app/?state=empty) | `/?state=empty` | "No repositories yet" message |
+| Success | [/](https://github-repo-project-eight.vercel.app/) | `/` | The repositories for `gaearon`, plus a total-stars line |
 
 **Notes**
 
