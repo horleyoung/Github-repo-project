@@ -22,12 +22,20 @@ const ERRORS = {
   SERVER: { message: "Server error. Please try again later.", canRetry: true },
 };
 
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 async function fetchRepos(user) {
   const demo = new URLSearchParams(window.location.search).get("state");
 
   if (demo === "loading") return new Promise(() => {});
-  if (demo === "error") throw { code: "SERVER" };
-  if (demo === "empty") return [];
+    if (demo === "error") {
+    await wait(800);
+    throw { code: "SERVER" };
+  }
+  if (demo === "empty") {
+    await wait(800);
+    return [];
+  }
 
   const res = await fetch(`https://api.github.com/users/${user}/repos`);
 
